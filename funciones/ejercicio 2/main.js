@@ -7,12 +7,12 @@
 
 // ingresoMonto = parseInt(ingresoMonto)
 
-function impuestoAlMonto(monto) {
-   let textoInfo = `a su monto de: $${monto} se le aplicara el 21% de percepcion de IVA. TOTAL:$ `
-   let porcentaje = 21/100 * monto
-   let impuesto = porcentaje + monto
+function impuestoAlMonto(monto, porcentaje) {
+   let textoInfo = `a su monto de: $${monto} se le aplicara el ${porcentaje}% de interes. TOTAL:$ `
+   let montoYPorcentaje = porcentaje/100 * monto
+   let impuesto = montoYPorcentaje + monto
 
    return textoInfo + impuesto
 }
 
-console.log(impuestoAlMonto(15847));
+console.log(impuestoAlMonto(10, 0));
