@@ -15,4 +15,4 @@ function impuestoAlMonto(monto, porcentaje) {
    return textoInfo + impuesto
 }
 
-console.log(impuestoAlMonto(10, 0));
+console.log(impuestoAlMonto(100000, 32));
